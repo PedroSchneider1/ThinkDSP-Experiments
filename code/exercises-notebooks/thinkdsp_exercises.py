@@ -1098,7 +1098,7 @@ class Wave:
         *Done in chapter 1
         """
         self.ts *= factor
-        self.framerate *= factor
+        self.framerate /= factor
 
 def unbias(ys):
     """Shifts a wave array so it has mean 0.
